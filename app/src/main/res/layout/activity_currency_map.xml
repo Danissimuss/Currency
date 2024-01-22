@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".CurrencyMap">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/getTheGraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView_map"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rub" />
+
+    <EditText
+        android:id="@+id/TextNumber2"
+        android:layout_width="106dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#fdfdfd"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/getTheGraph"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView_map"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_map"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextNumber1"
+        android:layout_width="106dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1.0"
+        android:textColor="#fdfdfd"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/getTheGraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView_map"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/getTheGraph"
+        app:layout_constraintEnd_toStartOf="@+id/TextNumber2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/TextNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/adView_map"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rub" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/getTheGraph"
+        style="@style/CardView.Dark"
+        android:layout_width="392dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView_map"
+        app:layout_constraintVertical_bias="0.915" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
